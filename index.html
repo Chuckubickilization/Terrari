@@ -1,0 +1,281 @@
+# Terrarium Simulator — Next-Step Blueprint (from Prototype to Addictive Core)
+
+## 1) Positioning: what game this should become
+
+**Tagline:** *A cozy 3D terrarium builder with deep optimization layers and low-pressure daily progression.*
+
+Your current prototype already has the right emotional ingredients:
+- soothing ambience (day/night, weather, particles),
+- tactile care actions (mist, fertilize, curate),
+- small rewards (XP, gems, blooms, discoveries),
+- short-session loops.
+
+The best optimized path is to **double down on “cozy mastery”** rather than pure city-builder complexity:
+- Keep sessions 5–12 minutes.
+- Keep controls simple.
+- Add strategic depth through **systems interactions**, not micromanagement.
+
+---
+
+## 2) Lessons from adjacent games (successes to copy, mistakes to avoid)
+
+## Games to learn from
+
+### A. FarmVille / social idle loops
+**Use:**
+- predictable short loops,
+- daily objectives,
+- streak psychology,
+- event cadence.
+
+**Avoid:**
+- hard punishments for missing a day,
+- spammy monetization pressure,
+- mandatory social gating.
+
+### B. Animal Crossing / cozy life sims
+**Use:**
+- gentle daily rituals,
+- seasonal freshness,
+- collection pride.
+
+**Avoid:**
+- slow early game unlock pacing,
+- too much friction for rearranging spaces.
+
+### C. Dorfromantik / Islanders (chill optimization)
+**Use:**
+- elegant scoring synergies,
+- “easy to place, hard to optimize.”
+
+**Avoid:**
+- opaque scoring logic.
+
+### D. Mini Motorways / Into-the-Breach style readability
+**Use:**
+- clear systemic feedback,
+- visible cause → effect.
+
+**Avoid:**
+- hidden penalties and unexplained failures.
+
+---
+
+## 3) Refined core fantasy
+
+> “I craft a living glass world, discover beautiful combos, and gradually master a tiny ecosystem that always gives me a meaningful thing to do.”
+
+This shifts the game from “decoration only” to **decorative strategy**.
+
+---
+
+## 4) Stronger gameplay architecture (v1.0)
+
+## A) Core loop (minute-to-minute)
+1. Observe terrarium status (moisture, health, opportunities).
+2. Take 1–3 actions (place, mist, prune weeds, harvest minerals, trigger boosts).
+3. Resolve outcomes (XP, gems, ecosystem changes, discoveries).
+4. Re-plan layout for next synergy target.
+
+## B) Meta loop (session-to-session)
+1. Complete daily quests + streak bonus.
+2. Unlock new species/rocks/decor tiers.
+3. Improve terrarium score and codex completion.
+4. Participate in rotating themed events.
+
+## C) Mastery loop (long-term)
+1. Build around “biome archetypes” (Cloud Garden, Desert Glass, Luminous Cave, etc.).
+2. Chase high-score “Harmony Ratings” per archetype.
+3. Publish snapshots/seeds (async social).
+
+---
+
+## 5) New systems to add next (highest ROI)
+
+## 5.1 Microclimate Grid (highest gameplay upgrade)
+**Why:** turns placement into meaningful strategy while preserving cozy vibe.
+
+Implement a hidden/lightly-shown grid under soil where each cell tracks:
+- humidity,
+- shade,
+- mineral richness,
+- airflow.
+
+Each placed item influences nearby cells (auras).
+Plants read local cell values and gain:
+- growth bonus,
+- bloom chance,
+- rarity chance.
+
+**Result:** adjacency becomes fun and intentional, like city-builder zoning but lightweight.
+
+## 5.2 Species Needs + Traits 2.0
+Each plant gets 2 preferred ranges and 1 personality trait:
+- Fern: high humidity + medium shade.
+- Cactus: low humidity + high sunlight.
+- Moss: high humidity + low airflow.
+
+Trait examples:
+- “Nurse Plant”: buffs nearby immature plants.
+- “Miner’s Friend”: +20% mineral maturation near rocks.
+- “Night Bloom”: gains bloom chance at night.
+
+## 5.3 Care Fatigue (soft anti-spam)
+Current misting can be spammy if uncapped.
+Add **soft diminishing returns**:
+- first mist = full effect,
+- second in short window = reduced,
+- third = cosmetic only.
+
+Keeps balance without feeling punitive.
+
+## 5.4 Discovery Chains
+Upgrade discoveries from random popups to short chains:
+- Trigger condition,
+- Follow-up action,
+- Reward with codex lore + cosmetic variant.
+
+Example chain:
+1. “Condensation Prism” appears after 3 rainy windows.
+2. Place crystal near fern.
+3. Unlock “Iridescent Fern” skin.
+
+## 5.5 Blueprints (save/load layouts)
+Players can save up to N layouts and switch.
+This massively increases retention and experimentation.
+
+---
+
+## 6) Addictive but gentle progression model
+
+## Pillars
+- **No hard failure.** Terrarium becomes suboptimal, not dead.
+- **Always one rewarding action.**
+- **Visible near-term goals + long-term collection.**
+
+## Progress layers
+1. **Account Level** (global unlocks).
+2. **Terrarium Rank** (per-build score + badges).
+3. **Codex Completion** (species/variants/discoveries).
+4. **Season Pass Lite** (free track only at first).
+
+---
+
+## 7) Economy & balance guardrails
+
+## Currencies
+- Soft: XP, Gems (already present).
+- Optional future premium: only cosmetics/extra slots, never power-gating core loop.
+
+## Anti-inflation rules
+- Scale late-game costs with logarithmic curve, not linear spikes.
+- Hard cap stacked multipliers.
+- Ensure at least one deterministic gem source/day.
+
+## Reward cadence targets
+- “Small reward hit” every ~60–120 seconds.
+- “Meaningful unlock” every 1–2 sessions early game.
+- “Collection milestone” every 3–5 sessions.
+
+---
+
+## 8) UX changes that will instantly improve feel
+
+1. **Action heatmap overlay toggle** (humidity/mineral/shade).
+2. **Plant status rings** with tiny icons (happy/thirsty/overcrowded).
+3. **Cause-and-effect feed** (“+8 growth because Fern near Moss”).
+4. **1-click ‘suggested move’ assistant** for new players.
+5. **Photo mode** with depth of field + filters + sticker frame.
+
+---
+
+## 9) Social features without real-time multiplayer
+
+You do **not** need synchronous multiplayer initially.
+Best path:
+- Shareable terrarium “seed code” (layout + weather state + season).
+- Weekly community challenge (e.g., “Best Desert Duo score”).
+- Vote/gallery with async likes.
+
+This preserves cozy tone and keeps scope under control.
+
+---
+
+## 10) Production roadmap (optimized execution)
+
+## Milestone 1 (1–2 weeks): “Strategic Cozy Core”
+- Add microclimate grid.
+- Add species preferred ranges + visible happiness state.
+- Add clear synergy breakdown panel.
+- Rebalance mist/fertilizer with soft diminishing returns.
+
+**Exit criteria:** players can explain why one layout is better than another.
+
+## Milestone 2 (1–2 weeks): “Retention Core”
+- Discovery chains (at least 6).
+- Blueprint save/load.
+- Daily/weekly rotating challenge.
+- Event-ready data tables (JSON-driven).
+
+**Exit criteria:** D2 retention improves via meaningful return goals.
+
+## Milestone 3 (2+ weeks): “Shareability & Polish”
+- Photo mode + seed sharing.
+- Seasonal cosmetic variants.
+- UX polish pass (readability + onboarding).
+
+**Exit criteria:** players share builds externally; measurable increase in session frequency.
+
+---
+
+## 11) KPIs to track from first playable
+
+- D1 / D3 / D7 retention.
+- Avg session length.
+- Actions per session.
+- % sessions with at least one completed quest.
+- % players using blueprint feature.
+- % players achieving first synergy in session 1.
+
+If “first synergy in session 1” is low, onboarding/readability is the bottleneck.
+
+---
+
+## 12) Concrete implementation spec for your current prototype
+
+## Data additions
+- `cellGrid[x][z] = { humidity, shade, minerals, airflow }`
+- `plantDefs[id].needs = { humidity:[min,max], shade:[min,max] }`
+- `plantDefs[id].trait`
+- `placedItem.influenceRadius`
+
+## Runtime pass (every N seconds)
+1. Clear grid to baseline.
+2. Apply item influence falloff.
+3. Evaluate each plant local-fit score (0–100).
+4. Convert score to growth speed, bloom chance, XP trickle.
+
+## UI additions
+- Toggle: “Climate View.”
+- Plant tooltip: `Local Fit: 78 (Great)` + reasons.
+- Score panel: “Top 3 positive synergies / Top 2 blockers.”
+
+---
+
+## 13) Creative direction (ambience maximization)
+
+- Sound layers tied to moisture + time of day (soft droplets, glass taps, wind hush).
+- Very subtle camera breathing when idle.
+- Seasonal particle mood shifts already good; extend with dynamic color grading LUT presets.
+- Add “quiet milestones” (e.g., a single chime + slow glow sweep) instead of loud arcade popups.
+
+---
+
+## 14) Immediate next coding task (the single best next step)
+
+Build **Microclimate Grid v0** behind a debug toggle.
+
+Why this first:
+- unlocks strategic depth,
+- makes all future systems (traits, challenges, events) easier,
+- provides a strong differentiator from “just another decorative sandbox.”
